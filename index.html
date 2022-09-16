@@ -10,7 +10,7 @@
   }
 
   body {
-    background: black;
+    background: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,7 +97,6 @@ function isValidMove(matrix, cellRow, cellCol) {
       }
     }
   }
-
   return true;
 }
 
@@ -141,7 +140,7 @@ function showGameOver() {
   cancelAnimationFrame(rAF);
   gameOver = true;
 
-  context.fillStyle = 'black';
+  context.fillStyle = 'white';
   context.globalAlpha = 0.75;
   context.fillRect(0, canvas.height / 2 - 30, canvas.width, 60);
 
